@@ -4,8 +4,8 @@
     }
 }
 
-@media screen and (min-width: 899px) {
-    .log-in {
+@media screen and (max-width: 899px) {
+    .login {
         display: none;
     }
 }
@@ -32,6 +32,12 @@
 
 @media screen and (min-width:1199px) {
     .img{
+        display: none;
+    }
+}
+
+@media screen and (min-width:899px) {
+    .lente {
         display: none;
     }
 }
