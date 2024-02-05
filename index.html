@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com">
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+            theme: {
+                screens: {
+                    'sm': { 'min': '640px', 'max': '767px' },
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': { 'min': '768px', 'max': '1023px' },
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': { 'min': '1024px', 'max': '1279px' },
+                    // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+                    'xl': { 'min': '1280px', 'max': '1535px' },
+                    // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+                    '2xl': { 'min': '1536px' },
+                    // => @media (min-width: 1536px) { ... }
+                },
+            }
+        }
+        module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+      },
+    }
+  }
+}
+    </script>
+    <script src="https://kit.fontawesome.com/54c8c90fcc.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Replica Dribble</title>
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="flex justify-between pt-[10px]">
+            <!-- container menu e dribble -->
+            <div class="flex p-[15px] m-[5px]">
+                <div class="text-[18px]"><i class="fa-solid fa-bars"></i></div>
+                <div>
+                    <a href=""> <img class="w-[70px] ml-[15px]" src="/assets/logoDribble.png" alt=""></a>
+                </div>
+            </div>
+            <!-- container sezione search e signup -->
+            <div class="flex p-[15px] m-[5px]">
+                <div>
+                    <a class="" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="">
+                    <button class="ml-[20px] bg-[#0d0c22] w-[80px] h-[35px] rounded-[18px] text-white font-semibold text-[12px] justify-center ">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
