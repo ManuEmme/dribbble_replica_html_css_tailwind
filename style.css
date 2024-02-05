@@ -1,3 +1,37 @@
-body {
-    background-color: #f8f7f3;
+@media screen and (min-width: 800px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 899px) {
+    .log-in {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .search {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .linkcss {
+        display: none;
+    }
+}
+    
+@media screen and (max-width: 1200px) {
+    .imgcentro {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1199px) {
+    .img{
+        display: none;
+    }
 }

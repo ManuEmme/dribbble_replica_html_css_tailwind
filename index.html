@@ -10,33 +10,54 @@
         module.exports = {
             theme: {
                 screens: {
-                    'sm': { 'min': '640px', 'max': '767px' },
-                    // => @media (min-width: 640px and max-width: 767px) { ... }
+                    'tablet': '640px',
+                    // => @media (min-width: 640px) { ... }
 
-                    'md': { 'min': '768px', 'max': '1023px' },
-                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
 
-                    'lg': { 'min': '1024px', 'max': '1279px' },
-                    // => @media (min-width: 1024px and max-width: 1279px) { ... }
-
-                    'xl': { 'min': '1280px', 'max': '1535px' },
-                    // => @media (min-width: 1280px and max-width: 1535px) { ... }
-
-                    '2xl': { 'min': '1536px' },
-                    // => @media (min-width: 1536px) { ... }
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
                 },
             }
         }
         module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        'regal-blue': '#243c5a',
-      },
-    }
-  }
-}
+            theme: {
+                extend: {
+                    colors: {
+                        'regal-blue': '#243c5a',
+                    },
+                }
+            }
+        }
+        module.exports = {
+            theme: {
+                extend: {
+                    opacity: {
+                        '67': '.67',
+                    }
+                }
+            }
+        }
+        module.exports = {
+            theme: {
+                fontFamily: {
+                    sans: [
+                        '"Inter var", sans-serif',
+                        {
+                            fontFeatureSettings: '"cv11", "ss01"',
+                            fontVariationSettings: '"opsz" 32'
+                        },
+                    ],
+                },
+            },
+        }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/54c8c90fcc.js" crossorigin="anonymous"></script>
 
 
@@ -44,29 +65,80 @@
     <title>Replica Dribble</title>
 </head>
 
-<body>
+<body class="bg-[#f8f7f3] font-['Open_Sans'] ">
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="flex justify-between pt-[10px]">
+        <nav class="flex justify-between pt-[10px] ">
             <!-- container menu e dribble -->
             <div class="flex p-[15px] m-[5px]">
-                <div class="text-[18px]"><i class="fa-solid fa-bars"></i></div>
-                <div>
-                    <a href=""> <img class="w-[70px] ml-[15px]" src="/assets/logoDribble.png" alt=""></a>
+                <!-- container logo per mediaqueries css -->
+                <div class="logo">
+                    <div class="text-[18px]"><i class="fa-solid fa-bars"></i></div>
+                </div>
+
+                <div class="img">
+                    <a href="#"> <img class="w-[70px] ml-[15px]" src="/assets/logoDribble.png" alt=""></a>
+                </div>
+
+
+                <!-- container nuovi link da desktop -->
+                <div class="linkcss">
+
+                    <div class="ml-[20px] ">
+                        <div class="text-[12px] font-semibold flex ">
+                            <div class="pl-[20px]"><a href="">Find talent</a></div>
+                            <div class="pl-[20px]"><a href="">Inspiration</a></div>
+                            <div class="pl-[20px]"><a href="">Learn design <i
+                                        class="fa-solid fa-chevron-down text-[10px]"></i></a></div>
+                            <div class="pl-[20px]"><a href="">Jobs</a></div>
+                            <div class="pl-[20px]"><a href="">Go Pro</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgcentro">
+                    <img class="w-[70px] justify-evenly items-center ml-[100px]" src="/assets/logoDribble.png"
+                        alt="logoimg">
                 </div>
             </div>
             <!-- container sezione search e signup -->
+
             <div class="flex p-[15px] m-[5px]">
-                <div>
-                    <a class="" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <div class="search">
+                    <div class="search-input ml-[30px]">
+                        <input class="text-[12px] rounded-[20px] h-[40px] w-[150px]" type="text"
+                            placeholder="Search...">
+
+                    </div>
+                    <div class="lente">
+                        <div>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- container  login per mediaqueries css -->
+                <div class="log-in">
+                    <div>
+                        <button class="text-[12px] font-semibold ml-[20px] ">Log in</button>
+                    </div>
                 </div>
                 <div class="">
-                    <button class="ml-[20px] bg-[#0d0c22] w-[80px] h-[35px] rounded-[18px] text-white font-semibold text-[12px] justify-center ">Sign Up</button>
+                    <button
+                        class="ml-[20px] bg-[#0d0c22] w-[80px] h-[35px] rounded-[18px] text-white font-semibold text-[12px] justify-center hover:opacity-[0.70]">Sign
+                        Up</button>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- main -->
+    <main>
+        <div class="">
+            <div class="bg-gradient-to-r from-cyan-500 to bg-pink-500 w-[300px] text-center rounded-[10px]">
+                <span> <a href="">Over 3 million ready-to-work creatives!</a></span>
+            </div>
+        </div>
+
+    </main>
 </body>
 
 </html>
