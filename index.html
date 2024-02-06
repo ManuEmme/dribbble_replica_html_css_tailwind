@@ -52,7 +52,7 @@
                 },
             },
         }
-  
+
 
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,136 +67,114 @@
     <title>Replica Dribble</title>
 </head>
 
-<body class="bg-[#f8f7f3] font-['Open_Sans'] ">
+<body class="bg-[#f8f7f3] font-['Open_Sans'] p-[10px]">
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="flex justify-between pt-[10px] ">
-            <!-- container menu e dribble -->
-            <div class="flex p-[15px] m-[5px]">
-                <!-- container logo per mediaqueries css -->
-                <div class="logo">
-                    <div class="text-[18px]"><i class="fa-solid fa-bars"></i></div>
-                </div>
-
-                <div class="img">
-                    <a href="#"> <img class="w-[70px] ml-[15px]" src="/assets/logoDribble.png" alt=""></a>
-                </div>
-
-
-                <!-- container nuovi link da desktop -->
-                <div class="linkcss">
-
-                    <div class="ml-[20px] ">
-                        <div class="text-[12px] font-semibold flex ">
-                            <div class="pl-[20px]"><a href="">Find talent</a></div>
-                            <div class="pl-[20px]"><a href="">Inspiration</a></div>
-                            <div class="pl-[20px]"><a href="">Learn design <i
-                                        class="fa-solid fa-chevron-down text-[10px]"></i></a></div>
-                            <div class="pl-[20px]"><a href="">Jobs</a></div>
-                            <div class="pl-[20px]"><a href="">Go Pro</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="imgcentro">
-                    <img class="w-[80px] justify-evenly items-center ml-[300px] mr-[300px]"
-                        src="/assets/logoDribble.png" alt="logoimg">
-                </div>
+        <nav class="flex  pt-2 justify-between md:justify-start">
+           
+            <!-- classe menu hamburgher e imglogo-->
+            <div class="menuhamb border-4 border-red-500 w-[30%] flex  order-0 sm:order-2 md:order-2">
+                <i class="fa-solid fa-bars mr-5 md:hidden"></i> 
+            <!-- classe logo img -->
+            <div class="logo  w-[100px]  order-2 ">
+                <img class="w-[100px]" src="/assets/logoDribble.png" alt="">
             </div>
-            <!-- container sezione search e signup -->
-
-            <div class="flex p-[15px] m-[5px]">
-                <div class="search">
-                    <div class="search-input ml-[30px]">
-                        <input class="text-[12px] rounded-[20px] h-[40px] w-[150px]" type="text"
-                            placeholder="Search...">
-
-                    </div>
-                    <div class="lente">
-                        <div>
-                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- container  login per mediaqueries css -->
-                <div class="login">
-                    <div>
-                        <button class="text-[12px] font-semibold ml-[20px] ">Log in</button>
-                    </div>
-                </div>
-                <div class="">
-                    <button
-                        class="ml-[20px] bg-[#0d0c22] w-[80px] h-[35px] rounded-[18px] text-white font-semibold text-[12px] justify-center hover:opacity-[0.70]">Sign
-                        Up</button>
-                </div>
             </div>
+            
+            <!-- classe links -->
+            <div class=" hidden md:inline-block links border-4 border-red-500 w-[50%] order-0">
+            <section>
+                <ul class="flex  gap-3 py-2 text-[12px] font-semibold">
+                    <li>
+                        <a href="">Find talent</a>
+                    </li>
+                    <li>
+                        <a href="">Inspiration</a>
+                    </li>
+                    <a href="">Learn design <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+                    <li>
+                        <a href="">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="">Go Pro</a>
+                    </li>
+                </ul>
+            </section>
+            </div>
+            <!-- classe con lente, search, login e signup -->
+            <div class="signup border-4 border-red-500 w-[20%] flex justify-end items-center  order-2">
+                <!-- lente -->
+                <section class="lg:hidden"> <a class="text-[15px]" href=""> <i class="fa-solid fa-magnifying-glass"></i> </a></section>
+                <!-- search -->
+                <section class="hidden lg:inline-block"><input class="text-[12px] rounded-[20px] h-[40px] w-[150px] mr-[30px]"  type="text"  placeholder='Search...'></section>
+                <!-- login -->
+                <section class="hidden md:inline-flex"> <a href="#" class="text-[12px] font-semibold ml-[15px] text-nowrap ">Log in</a></section>
+                <!-- signup -->
+                <section> <button class="ml-[20px] bg-[#0d0c22] w-[80px] h-[35px] rounded-[18px] text-white font-semibold text-[12px] justify-center hover:opacity-[0.70]">Sign up</button></section>
+                
+            </div>
+            <!-- fine navbar -->
         </nav>
     </header>
-    <!-- main -->
-    <main>
-
-        <section class="flex justify-center items-center text-center py-[50px] px-[30px]">
-            <div>
-                <div class="w-[100vw]">
-                    <div class="mb-[30px] mt-[30px]"><a class="bg-cyan-300 w-[350px] text-[16px] rounded-[15px]"
-                            href="">Over 3
-                            million
-                            ready-to-work creatives!</a></div>
-                    <div class="mb-[20px]">
-                        <h1 class="text-[72px] font-semibold">The world’s destination for design</h1>
-                    </div>
-                    <div>
-                        <p class="text-[20px] font-semibold">Get inspired by the work of millions of top-rated designers
-                            & agencies around the world.</p>
-                    </div>
-                    <div class="mt-[30px]">
-                        <button
-                            class=" bg-[#0d0c22] w-[100px] h-[45px] rounded-[25px] text-white font-semibold text-[12px] justify-center hover:opacity-[0.70]">Get
-                            started</button>
-                    </div>
+        <main>
+            <section class=" w-[90%] h-[400px] m-[20px] mt-[50px] justify-center items-center ">
+                <!-- link sopra al titolo -->
+                <div class="link  mt-[20px] w-[100%] h-[50px] p-5">
+                    <section class="text-center"> <a class="text-[15px] bg-yellow-500 rounded-lg " href="">Over 3 millions ready-to-work creatives!</a></section>
                 </div>
-            </div>
-        </section>
+                <!-- titolo -->
+                <div class="titolo  w-[100%] h-[150px] mt-[30px] ">
+                    <section class="text-center"><h1 class="font-bold text-[32px] md:text-[50px] text-[#0d0c22]">The world's destination for design</h1></section>
+                </div>
+                <!-- sottotitolo -->
+                <div class="sottotitolo  w-[100%] h-[100px]  text-[#0d0c22]">
+                    <section class="text-center"><p class="text-[14px] font-semibold">Get inspired by the work of millions of top-rated designers & agencies around the world.</p></section>
+                <!-- link getstarted -->
+                <div class="button  w-[100%] h-[50px]">
+                    <section class=" mt-[20px] text-center text-white text-[12px] font-semibold"><button class=" bg-[#0d0c22] rounded-[50px] w-[110px] h-[43px] hover:opacity-[0.70] "><a href="">Get started</a></button></section>
+                </div>
+                </div>
+            </section>
 
-        <!-- Da fare carosello -->
-        <section>
-        </section>
-        <!-- Griglia immagini -->
+            <!-- fare carosello -->
+            <section>
 
+            </section>
 
-        <!-- titolo immagini -->
-        <section>
-            <div class="text-center justify-center items-center">
-                <span class="font-semibold text-[40px]">Explore inspiring designs</span>
-            </div>
-        </section>
+            <!-- immagini -->
+            <section class=" w-[100%] h-[60px]">
+                <div class="text-center">
+                    <h2 class="text-[#0d0c22] text-[30px] mb-[30px]">Explore inspiring designs</h2>
+                </div>
+                <div class="imagescontainer  flex flex-wrap justify-center gap-2  ">
+                    <div class="flex flex-wrap w-[100%] ">
+                        <div class=" w-[100%] p-[10px] sm:w-1/2 md:w-1/3 lg:w-1/4  ">
+                            <div class=" w-[100%]  group relative ">
+                                <div class="m-auto">
+                                    <img class="rounded-[10px] w-[100%] " src="/assets/img-1.png" alt="">
+                                    <!-- textcontainer -->
+                                    <div class="text-container absolute bottom-0 w-[100%] h-[30%] px-[20px] bg-gradient-to-b from-transparent to-black/70 hidden justify-between items-end group-hover:flex ">
+                                        <p class="text-white mb-[20px]">Lorem Ipsum</p>
+                                        <div class="mb-[20px]">
+                                            <button class="w-[40px] h-[40px] rounded-[50%] bg-white"><i class="fa-regular fa-bookmark"></i></button>
+                                            <button class="w-[40px] h-[40px] rounded-[50%] bg-white"><i class="fa-regular fa-heart"></i></button>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                    
+                    
+                </div> 
+            </section>
 
-        <!-- griglia immagini -->
-        <section>
-            <div>
-                <span class="inline-grid grid-cols-4 gap-4 border-4 border-red-400">
-                    <img class="rounded-[15px]" src="/assets/img-1.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-2.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-3.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-4.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-5.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-6.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-7.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-8.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-9.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-10.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-11.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-12.png" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-13.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-14.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-15.jpg" alt="">
-                    <img class="rounded-[15px]"  src="/assets/img-16.png" alt="">
-                  </span>
-               
-        </section>
-    </main>
-
-
+            
+        </main>
 </body>
 
 </html>
