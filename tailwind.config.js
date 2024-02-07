@@ -46,24 +46,24 @@ module.exports = {
 }
 
  
-// /**@type {import('tailwindcss').Config} */
-// module.exports = {
+/**@type {import('tailwindcss').Config} */
+module.exports = {
    
-//   theme: {
-//     extend: {
-//       keyframes: {
-//         badgeColorCycle: {
-//           '0%': { backgroundColor: '#ffda79' },
+  theme: {
+    extend: {
+      keyframes: {
+        badgeColorCycle: {
+          '0%': { backgroundColor: '#ffda79' },
 
-//           '25%': { backgroundColor: '#ffabe7' },
+          '25%': { backgroundColor: '#ffabe7' },
 
-//           '50%': { backgroundColor: '#d2dcf3' },
+          '50%': { backgroundColor: '#d2dcf3' },
 
-//           '75%': { backgroundColor: '#edf3d8' },
+          '75%': { backgroundColor: '#edf3d8' },
 
-//           '100%': { backgroundColor: '#ffda79' }
-//         }
-//       }
-//     }
-//   }
-// }
+          '100%': { backgroundColor: '#ffda79' }
+        }
+      }
+    }
+  }
+}
