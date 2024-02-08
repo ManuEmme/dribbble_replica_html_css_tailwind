@@ -87,19 +87,19 @@
     </style>
     <style>
         
-        .marquee {
+        .carousel {
           white-space: nowrap; 
           animation: marquee 15s linear infinite; 
           
         }
         @media screen and (min-width:800px) {
-            .marquee{
-                animation: marquee 30s linear infinite;
+            .carousel{
+                animation: carousel 30s linear infinite;
             }
         }
       
         
-        @keyframes marquee {
+        @keyframes carousel {
           100% { transform: translateX(100%); } 
           100% { transform: translateX(-100%); } 
         }
@@ -204,10 +204,10 @@
             </div>
         </section>
 
-        <!-- fare carosello -->
+        <!-- carosello centrale -->
         <section>
             <div class="overflow-hidden mt-[30px] mb-[50px]">
-                <div class="marquee flex gap-4">
+                <div class="carousel flex gap-4">
                     <div class="relative rounded-[20px] w-[218px] h-[272px] flex-shrink-0 overflow-hidden">  
                         <img class="w-[100%] h-[100%] object-cover" src="/assets/img-1.png" alt="">
                         <div class="absolute w-[100%] text-gray-200 bottom-0 p-4 font-bold text-[12px] bg-gradient-to-b from-transparent to-black/70">
@@ -1434,10 +1434,10 @@
             </div>
         </section>
 
-        <!-- fare carosello -->
+        <!-- carosello finale -->
         <section>
             <div class="overflow-hidden mt-[30px] mb-[50px]">
-                <div class="marquee flex gap-4">
+                <div class=" carousel flex gap-4">
                     <div class=" rounded-[20px] w-[200px] h-[150px] flex-shrink-0 overflow-hidden">  
                         <img class="w-[218px] h-[272px]" src="/assets/img-20.png" alt="">
                     </div>
@@ -1466,8 +1466,6 @@
                         <img class="w-[218px] h-[272px]" src="/assets/img-28.png" alt="">
                     </div>
                 </div>
-                
-            </div>
         </section>
     </main>
 
